@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <h2>Countdown to 2025</h2>
+<div id="countdown"></div>
+
+<script>
+    function countdown() {
+        const countDate = new Date('Jan 1, 2025 00:00:00').getTime();
+        const now = new Date().getTime();
+        const gap = countDate - now;
+
+        const second = 1000;
+        const minute = second * 60;
+        const hour = minute * 60;
+        const day = hour * 24;
+
+        const days = Math.floor(gap / day);
+        const hours = Math.floor((gap % day) / hour);
+        const minutes = Math.floor((gap % hour) / minute);
+        const seconds = Math.floor((gap % minute) / second);
+
+        document.getElementById('countdown').innerHTML = 
+            `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+        if (gap < 0) {
+            clearInterval(x);
+            document.getElementById('countdown').innerHTML = "Happy New Year!";
+        
+        }
+    }
+
+    const x = setInterval(countdown, 1000);
+</script>
+
+<h1>wellcome to  <strong>2025</strong></h1>
+<h3>Happy New Year</h3>
+
+<img 
+    width=500px
+    breath=500px
+    src="https://tse3.mm.bing.net/th?id=OIG2..MmZ_BRISYnExhBq65eI&pid=ImgGn" alt="newyear">
+
+   
+    <div>
+        <p5>Any one want  to know about DARSHAN K. just click here</p5>
+        <!-- this is for visit about page -->
+        <a href="./about.html">#Myprofile</a>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#DarshanK-1.0</title>
+</head>
+<body>
+    <h1>About Dboss fan</h1>
+    
+    <p>Darshan is a dedicated professional who holds a Bachelor of Commerce (BCom) degree from Kuvempu University. Currently, he is working as a receptionist at Mathura Centre in Shivamogga, where he excels in managing daily operations and ensuring excellent client service. Known for his friendly demeanor and strong organizational skills, Darshan plays a vital role in creating a welcoming environment for visitors and maintaining smooth administrative processes.<strong>(now he is a proficient  KUDUKA)</strong></p>
+    <h2>Appi Darshan if you want to see your beautiful art just enter name and password</h2>
+    <form action="">
+        <input type="text" placeholder="enter name">
+        <input type="password" placeholder="enter new password">
+        <button type="submit">Submit</button>
+    </form>
+    <a href="https://1drv.ms/v/c/f23af00f467682c1/EcBTdtwq_cNFlWvL639wf6YB1Dc7op9fqyfPTsZxdORcRw?e=0PeJZg">click here(you can download also)</a>
+  
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var name = document.querySelector('input[type="text"]').value;
+            var password = document.querySelector('input[type="password"]').value;
+            
+            if (name == "Darshan" && password == "9223") {
+                document.querySelector('a').style.display = 'block';
+            } else {
+                if(name!="Darshan"||password!="9223"){
+                var errorMessage = document.createElement('p');
+                errorMessage.textContent = 'Please enter correct name(Darshan) and password(9223)';
+                errorMessage.style.color = 'red';
+                document.body.appendChild(errorMessage);
+                }
+                
+            }
+        });
+
+        document.querySelector('a').style.display = 'none';
+    </script>
+</body>
+</html>
